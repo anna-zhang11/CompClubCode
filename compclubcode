@@ -1,0 +1,51 @@
+// program should start with a header explaining what it does
+void printCompClub();
+void doTheRest();
+// Using global variables is dangerous as it allows variables to be modified
+// anywhere in the program, making it difficult to debug any issues that may arise
+int max = 100;
+int main(void) {
+    // Using unclear variable names makes it difficult for readers to understand
+    // your program
+    for (int abracadabra = 1; abracadabra <= max; abracadabra++) {
+    // Incorrect indentation makes code lack separation and harder to understand 
+    // while the lack of whitespacing makes the code hard to read
+    if (abracadabra%3==0&&abracadabra%5==0) 
+        { 
+            // Using a function for a simple printf statement is trivial and
+            // makes the code less readable
+
+            // Writing obvious comments increases the clutter of the program
+            // and makes it harder to read
+
+            // Print to terminal "CompClub"
+            printCompClub();
+        } 
+        
+        else if (abracadabra % 3 == 0) {
+
+            // inconsistent and unnecessary vertical whitespacing separates code,
+            // when it should be grouped together for legibility 
+            printf("Comp");
+        } else {
+            doTheRest();}
+    }
+}
+
+// Functions should have function comments explaining the variables and its purpose
+void printCompClub() {
+    printf("CompClub");
+}
+
+// This function performs multiple tasks and unnecessarily abstracts away from
+// the more simple case-checking within the main function, meaning the reader
+// has to take more time to understand the details of the program.
+// Additionally, the function name is obscure and means its purpose is not
+// immediately clear to the reader.
+void doTheRest() {
+    else if (abracadabra % 5 == 0) {
+            printf("Club");
+    } else {
+            printf("%d", abracadabra);
+    }
+}
