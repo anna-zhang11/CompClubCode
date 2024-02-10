@@ -1,6 +1,6 @@
-// program should start with a header explaining what it does
+// Program should start with a header explaining what it does
 void printCompClub();
-void doTheRest();
+void doTheRest(int abracadabra);
 // Using global variables is dangerous as it allows variables to be modified
 // anywhere in the program, making it difficult to debug any issues that may arise
 int max = 100;
@@ -28,7 +28,7 @@ int main(void) {
             // when it should be grouped together for legibility 
             printf("Comp");
         } else {
-            doTheRest();}
+            doTheRest(abracadabra);}
     }
 }
 
@@ -40,10 +40,11 @@ void printCompClub() {
 // This function performs multiple tasks and unnecessarily abstracts away from
 // the more simple case-checking within the main function, meaning the reader
 // has to take more time to understand the details of the program.
+
 // Additionally, the function name is obscure and means its purpose is not
-// immediately clear to the reader.
-void doTheRest() {
-    else if (abracadabra % 5 == 0) {
+// immediately clear to the reader, which should be avoided for legibility.
+void doTheRest(int abracadabra) {
+    if (abracadabra % 5 == 0) {
             printf("Club");
     } else {
             printf("%d", abracadabra);
